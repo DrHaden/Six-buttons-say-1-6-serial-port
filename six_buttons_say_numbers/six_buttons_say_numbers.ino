@@ -1,5 +1,5 @@
 //HI! this is my first arduino serial port communication
-
+//I have not got it working yet but I will keep trying
 const int button1 = 1;
 const int button2 = 2;
 const int button3 = 3;
