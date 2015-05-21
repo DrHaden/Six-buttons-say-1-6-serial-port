@@ -33,28 +33,36 @@ void loop() {
   buttonState5 = digitalRead(button5);
   buttonState6 = digitalRead(button6);
   
+  delay (200);
+  
   if (buttonState1 == HIGH) {
-  Serial.println("1");
+  Serial.println("01");
   }else{
+    Serial.println("0");
   }
   if (buttonState2 == HIGH) {
-  Serial.println("2");
+  Serial.println("02");
   }else{
+    Serial.println("0");
   }
   if (buttonState3 == HIGH) {
-  Serial.println("3");
+  Serial.println("03");
   }else{
+    Serial.println("0");
   }
   if (buttonState4 == HIGH) {
-  Serial.println("4");
+  Serial.println("04");
   }else{
+    Serial.println("0");
   }
   if (buttonState5 == HIGH) {
-  Serial.println("5");
+  Serial.println("05");
   }else{
+    Serial.println("0");
   }
   if (buttonState6 == HIGH) {
-  Serial.println("6");
+  Serial.println("06");
   }else{
+    Serial.println("0");
   } 
 }
