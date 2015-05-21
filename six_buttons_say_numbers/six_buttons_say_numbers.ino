@@ -1,3 +1,5 @@
+//HI! this is my first arduino serial port communication
+
 const int button1 = 1;
 const int button2 = 2;
 const int button3 = 3;
