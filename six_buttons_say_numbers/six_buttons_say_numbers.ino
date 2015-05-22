@@ -1,5 +1,8 @@
 //HI! this is my first arduino serial port communication
-//I have not got it working yet but I will keep trying
+//It is now up and running
+//When buttons that are plugged into digital 1-6 are pushed the corresponding number is diplayed in serial moniter
+//When buttons are not being pushed six 0's are displayed until the buttons is pushed where in this case the number is displayed, the moniter waits then continues
+
 const int button1 = 1;
 const int button2 = 2;
 const int button3 = 3;
@@ -33,35 +36,41 @@ void loop() {
   buttonState5 = digitalRead(button5);
   buttonState6 = digitalRead(button6);
   
-  delay (200);
+  delay (100); 
   
   if (buttonState1 == HIGH) {
-  Serial.println("01");
+    Serial.println("01");
+      delay (1000);
   }else{
     Serial.println("0");
   }
   if (buttonState2 == HIGH) {
-  Serial.println("02");
+    Serial.println("02");
+      delay (1000);
   }else{
     Serial.println("0");
   }
   if (buttonState3 == HIGH) {
-  Serial.println("03");
+    Serial.println("03");
+      delay (1000);
   }else{
     Serial.println("0");
   }
   if (buttonState4 == HIGH) {
-  Serial.println("04");
+    Serial.println("04");
+      delay (1000);
   }else{
     Serial.println("0");
   }
   if (buttonState5 == HIGH) {
-  Serial.println("05");
+    Serial.println("05");
+      delay (1000);
   }else{
     Serial.println("0");
   }
   if (buttonState6 == HIGH) {
-  Serial.println("06");
+    Serial.println("06");
+      delay (1000);
   }else{
     Serial.println("0");
   } 
